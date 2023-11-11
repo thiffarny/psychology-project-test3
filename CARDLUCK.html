@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chosse ur cards</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script defer src="test.js"></script>
+    <!-- <script>
+        $(function () {
+            $("#visible").click(function () {
+                $('#invisible1').toggleClass("show");
+            });
+            $("#visible").click(function () {
+                $('#invisible2').toggleClass("show");
+            });
+        });
+  
+    </script> -->
+</head>
+
+<body>
+
+    <div class="head">
+        <h2></h2>
+    </div>
+    
+
+    <label class="p1">
+        <header>คุณได้ไพ่ the magician</header>
+        <div class="card">
+            <div class="image">
+                <img src="luck1.png" alt="">
+            </div>     
+        </div>
+        <p>คุณเก่งมากๆเเล้วนะ ทุกอย่างเปิดทางพร้อมให้คุณลงมือทำเเล้วล่ะ ถ้าคุณอยากทำอะไรก็ลุยได้เต็มที่เลย เท่านี้<span id="name"></span>ก็ไม่มีสิ่งที่ต้องเสียใจภายหลังเเน่นอน~~</p>
+    </label>
+    
+    <label class="p2">
+        <header>คุณได้ไพ่ eight of pentacles</header>
+        <div class="card">
+            <div class="image">
+                <img src="luck2.png" alt="">
+            </div>     
+        </div>
+        <P>ความสำเร็จเหล่านี้ ไม่ว่ายังไงก็ต้องเกิดมาจากตัวคุณเองนะ ขอแค่คุณขยันหมั่นเพียร ตั้งใจทำสิ่งต่างๆให้บรรลุเป้าหมายแล้วล่ะก็ ทุกสิ่งที่คุณต้องการก็จะคุ้มค่าเเล้วล่ะ</P>
+    </label>
+
+    <label class="p3">
+        <header>คุณได้ไพ่ page of pentacles</header>
+        <div class="card">
+            <div class="image">
+                <img src="luck3.png" alt="">
+            </div>     
+        </div>
+        <p>คุณจะได้รับโอกาสดีๆต่อจากนี้แน่นอน ถ้าหากคุณคิดที่จะเริ่มต้นลงมือทำ แม้จะเป็นเพียงจุดเริ่มต้นเล็กๆก็ตาม ไม่ต้องกังวลที่จะออกมาจากเซฟโซนของตัวเองนะ เราเชื่อว่าคุณทำได้</p>
+    </label>
+
+    <label class="p4">
+        <header>คุณได้ไพ่ page of pentacles</header>
+        <div class="card">
+            <div class="image">
+                <img src="luck3.png" alt="">
+            </div>     
+        </div>
+        <p>คุณจะได้รับโอกาสดีๆต่อจากนี้แน่นอน ถ้าหากคุณคิดที่จะเริ่มต้นลงมือทำ แม้จะเป็นเพียงจุดเริ่มต้นเล็กๆก็ตาม ไม่ต้องกังวลที่จะออกมาจากเซฟโซนของตัวเองนะ เราเชื่อว่าคุณทำได้</p>
+    </label>
+    <label class="p5">
+        <header>คุณได้ไพ่ eight of pentacles</header>
+        <div class="card">
+            <div class="image">
+                <img src="luck2.png" alt="">
+            </div>     
+        </div>
+        <P>ความสำเร็จเหล่านี้ ไม่ว่ายังไงก็ต้องเกิดมาจากตัวคุณเองนะ ขอแค่คุณขยันหมั่นเพียร ตั้งใจทำสิ่งต่างๆให้บรรลุเป้าหมายแล้วล่ะก็ ทุกสิ่งที่คุณต้องการก็จะคุ้มค่าเเล้วล่ะ</P>
+    </label>
+
+
+    <div class="container">
+        <input type="radio" name="slider" class="d-none" id="s1" checked>
+        <input type="radio" name="slider" class="d-none" id="s2" >
+        <input type="radio" name="slider" class="d-none" id="s3" >
+        <input type="radio" name="slider" class="d-none" id="s4" >
+        <input type="radio" name="slider" class="d-none" id="s5" >
+
+
+        <div class="cards">
+            <label for="s1" id="slide1">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact1" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+
+            <label for="s2" id="slide2">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact2" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+
+            <label for="s3" id="slide3">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact3" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+
+            <label for="s4" id="slide4">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact4" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+
+            <label for="s5" id="slide5">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact5" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+        </div>
+
+    </div>
+
+    <script>
+
+        const name = localStorage.getItem('name');
+        const date = localStorage.getItem('date');
+
+        document.getElementById('name').textContent = name;
+        document.getElementById('date').textContent = date;
+
+    </script>
+</body>
+
+</html>

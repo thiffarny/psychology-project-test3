@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chosse ur cards</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script defer src="test.js"></script>
+    <!-- <script>
+        $(function () {
+            $("#visible").click(function () {
+                $('#invisible1').toggleClass("show");
+            });
+            $("#visible").click(function () {
+                $('#invisible2').toggleClass("show");
+            });
+        });
+  
+    </script> -->
+</head>
+
+<body>
+
+    <div class="head">
+        <h2></h2>
+    </div>
+    
+
+    <label class="p1">
+        <header>คุณได้ไพ่ dead</header>
+        <div class="card">
+            <div class="image">
+                <img src="p1.png" alt="">
+            </div>     
+        </div>
+        <p>คุณอาจจะผ่านเรื่องผิดหวัง หรือเรื่องเเย่ๆมามากมาย เเต่ไม่ต้องท้อเเท้ไปนะ <span id="name"></span> เพราะผลแห่งความสำเร็จที่คุณพยายามมาโดยตลอด จะเริ่มเปลี่ยนแปลงไปในทางที่ดีขึ้นทีละเล็กทีละน้อยอย่างเเน่นอน! ขอเเค่ทำมันต่อไปอย่างมีความหวัง!!</p>
+    </label>
+    
+    <label class="p2">
+        <header>คุณได้ไพ่ the sun</header>
+        <div class="card">
+            <div class="image">
+                <img src="p2.png" alt="">
+            </div>     
+        </div>
+        <P>นี่คือจุดเริ่มต้นแห่งความสำเร็จ! การเติบโต และความมีชีวิตชีวา ไม่ว่าคุณจะเจอกับเรื่องอะไรมาก็ขอให้กลับมาสดใสยิ้มแย้มเหมือนแสงอาทิตย์ที่เจิดจ้าไวๆนะ! <span id="name"></span></P>
+    </label>
+
+    <label class="p3">
+        <header>คุณได้ไพ่ wheel of furtune</header>
+        <div class="card">
+            <div class="image">
+                <img src="p3.png" alt="">
+            </div>     
+        </div>
+        <p>ไม่ว่าคุณจะทำอะไรก็ตาม ขอแค่คุณเชื่อมั่นในตนเองและตั้งใจทำ ไม่ต้องสนใจคำพูดของคนอื่นมากเกินไปจนปิดโอกาสที่จะได้ทำในสิ่งที่อยากทำ แค่นี้ความสำเร็จก็จะอยู่ที่ปลายทางของคุณแล้ว go! go! <span id="name"></span></p>
+    </label>
+
+    <label class="p4">
+        <header>คุณได้ไพ่ dead</header>
+        <div class="card">
+            <div class="image">
+                <img src="p1.png" alt="">
+            </div>     
+        </div>
+        <p>คุณอาจจะผ่านเรื่องผิดหวัง หรือเรื่องเเย่ๆมามากมาย เเต่ไม่ต้องท้อเเท้ไปนะ เพราะผลแห่งความสำเร็จที่คุณพยายามมาโดยตลอด จะเริ่มเปลี่ยนแปลงไปในทางที่ดีขึ้นทีละเล็กทีละน้อยอย่างเเน่นอน! ขอเเค่ทำมันต่อไปอย่างมีความหวัง!!</p>
+    </label>
+    <label class="p5">
+        <header>คุณได้ไพ่ the sun</header>
+        <div class="card">
+            <div class="image">
+                <img src="p2.png" alt="">
+            </div>     
+        </div>
+        <P>นี่คือจุดเริ่มต้นแห่งความสำเร็จ! การเติบโต และความมีชีวิตชีวา ไม่ว่าคุณจะเจอกับเรื่องอะไรมาก็ขอให้กลับมาสดใสยิ้มแย้มเหมือนแสงอาทิตย์ที่เจิดจ้าไวๆนะ!<span id="name"></span></P>
+    </label>
+
+
+    <div class="container">
+        <input type="radio" name="slider" class="d-none" id="s1" checked>
+        <input type="radio" name="slider" class="d-none" id="s2" >
+        <input type="radio" name="slider" class="d-none" id="s3" >
+        <input type="radio" name="slider" class="d-none" id="s4" >
+        <input type="radio" name="slider" class="d-none" id="s5" >
+
+
+        <div class="cards">
+            <label for="s1" id="slide1">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact1" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+
+            <label for="s2" id="slide2">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact2" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+
+            <label for="s3" id="slide3">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact3" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+
+            <label for="s4" id="slide4">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact4" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+
+            <label for="s5" id="slide5">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact5" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+        </div>
+
+    </div>
+
+    <script>
+
+        const name = localStorage.getItem('name');
+        const date = localStorage.getItem('date');
+
+        document.getElementById('name').textContent = name;
+        document.getElementById('date').textContent = date;
+
+    </script>
+</body>
+
+</html>

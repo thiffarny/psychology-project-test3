@@ -1,0 +1,73 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <title>info</title>
+  <link rel="stylesheet" href="test.css">
+  <script defer src="test.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@700&family=Tenali+Ramakrishna&display=swap"
+    rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</HEAD>
+</head>
+
+<body>
+  <div class="hero">
+
+    <video autoplay loop muted play-inline class="videobackground">
+      <source src="vid3.mp4" type="video/mp4">
+    </video>
+    <nav>
+      <ul class="navhead">
+        <li><a href="FIRSTPAGE.html">home</a></li>
+      </ul>
+      <div class="namehead">
+        project
+      </div>
+      <ul class="navhead">
+        <li><a href="ABOUT US.html">about us</a></li>
+      </ul>
+    </nav>
+
+<!-- login page -->
+
+    <div class="login1">
+        <h3>จัดทำโดย</h3>
+        <p>นางสาวทิพรดา โมพัด (จัดทำเว็บไซต์ html css javascript)</p><br>
+        <p>นางสาวชญานันท์ เจริญสุข (จัดทำรูปภาพและอนิเมชั่นประกอบ)</p><br>
+        <p>นางสาวชลดา ขำทอง (จัดทำข้อมูลด้านจิตวิทยา)</p><br>
+      </div>
+    </div>
+
+
+    <script>
+      const form = document.getElementById('form');
+      const name = document.getElementById('name');
+      const date = document.getElementById('date');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const nameValue = name.value;
+        const dateValue = date.value;
+
+        localStorage.setItem('name', nameValue);
+        localStorage.setItem('date', dateValue);
+
+        window.location.href = "CHOOSECAT.html";
+      })
+    
+  </script>
+
+</body>
+
+</html>

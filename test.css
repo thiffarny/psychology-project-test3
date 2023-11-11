@@ -1,0 +1,335 @@
+@font-face {
+    font-family: kanitmedium_italic;
+    src: url('font/kanitmedium_italic.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: Bright;
+    src: url('Bright-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: margin_demoregular;
+    src: url('margin_demo-webfont.woff2') format('woff2'),
+        url('margin_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Sceageus;
+    src: url('Sceageus.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: cooper;
+    src: url('Cooper\ Black\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: loogo;
+    src: url('FCIglooRoundedNoncommercial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    cursor: crosshair;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.namehead {
+    color: aliceblue;
+    font-family: Sceageus;
+}
+
+nav ul li {
+    font-family: Sceageus;
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: Sceageus;
+    text-decoration: none;
+    color: rgb(229, 201, 255);
+}
+
+.center {
+    text-align: center;
+}
+
+.center h1 {
+    color: aliceblue;
+    padding-top: 80px;
+    font-family: cooper;
+    transition: 0.5s;
+    animation-play-state: running;
+    animation-duration: 5s;
+}
+
+.center h1:hover {
+    animation-name: try;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+}
+
+@keyframes try {
+    0% {
+        color: rgb(255, 206, 231);
+    }
+
+    25% {
+        color: rgb(238, 198, 237);
+    }
+
+    50% {
+        color: rgb(196, 196, 243);
+    }
+
+    100% {
+        color: rgb(187, 210, 224);
+    }
+}
+
+
+.center a {
+    font-family: loogo;
+    padding-bottom: 25%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: x-large;
+    color: #ffffff;
+    border: 2px solid #2b1934;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.center a:hover {
+    -webkit-text-stroke: 2px #000000;
+    color: transparent;
+
+}
+
+
+.videobackground {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .videobackground {
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-wrap: 1;
+    }
+
+    .center h1 {
+        font-size: 60PX;
+    }
+}
+
+
+@media (max-aspect-ratio: 9/16) {
+    .videobackground {
+        height: 100%;
+        display: flex;
+        flex-wrap: 1;
+    }
+
+    .center h1 {
+        font-size: 40PX;
+    }
+}
+
+
+
+/* firstpage & nav & vidbg */
+
+/* info html2 */
+
+.login1 {
+    display: block;
+    background-color: transparent;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-style: solid;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    /* transition: height; */
+}
+
+.login1 h3 {
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    font-family: loogo;
+    color:#b197b5;
+}
+
+.login1 p {
+    padding-top: 10px;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    font-family: loogo;
+    color: rgb(255, 255, 255);
+}
+
+/* .info.active {
+    position: absolute;
+    height: 600px;  
+    width: 600px;
+} */
+
+/* .info.active .login {
+    transition: none;
+    transform: translateX(-400);
+    display: none;
+} */
+
+/* .info.active .cards{
+    position: absolute;
+    opacity: 100%;
+} */
+
+.login2 h2 {
+    font-family: loogo;
+    text-align: center;
+    color: #fce8ff;
+}
+
+form .go {
+    position: absolute;
+}
+
+.logininput3 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #b197b5;
+    margin: 30px 0;
+}
+
+input {
+    font-family: loogo;
+    height: 40px;
+    border-radius: 25px;
+}
+
+
+input[type="text"],
+input[type="date"] {
+    align-content: space-between;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 100;
+    width: 200px;
+    display: block;
+    border: none;
+    padding: 0.8em;
+    border: solid 1px rgba(255, 255, 255, 0.37);
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(171, 112, 112, 0) 96%, #fff 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #fff 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: loogo;
+}
+
+input[type="submit"] {
+    font-size: .9em;
+    color: #000000;
+    background: #faddff;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 0.9em;
+    width: 200px;
+    letter-spacing: 4px;
+}
+
+/* .info .login {
+    display: none;
+} */
+
+/* .info .cards{
+    position: absolute;
+    opacity: 0%;
+} */
+
+@media only screen and(max-width:390px) {
+    .videobackground {
+        height: 100%;
+        display: flex;
+        flex-wrap: 1;
+    }
+
+    .center h1 {
+        font-size: 50PX;
+    }
+}
+
+@media screen and(max-width:768PX) {
+    .videobackground {
+        height: 100%;
+        display: flex;
+        flex-wrap: 1;
+    }
+
+    .center h1 {
+        font-size: 100PX;
+    }
+}

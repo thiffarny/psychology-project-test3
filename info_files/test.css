@@ -1,0 +1,165 @@
+@font-face {
+    font-family: kanitmedium_italic;
+    src: url('font/kanitmedium_italic.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: Bright;
+    src: url('Bright-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: margin_demoregular;
+    src: url('margin_demo-webfont.woff2') format('woff2'),
+        url('margin_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Sceageus;
+    src: url('Sceageus.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: cooper;
+    src: url('Cooper\ Black\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: loogo;
+    src: url('FCIglooRoundedNoncommercial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    cursor: crosshair;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.namehead {
+    font-family: Sceageus;
+    font-size: 40px;
+    justify-content: center;
+}
+
+nav ul li {
+    font-family: Bright;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    font-size: 30px;
+    font-family: Bright;
+    text-decoration: none;
+    color: rgb(229, 201, 255);
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    color: aliceblue;
+    padding-top: 80px;
+    font-family: cooper;
+    font-size: 70px;
+    transition: 0.5s;
+    animation-play-state: running;
+    animation-duration: 5s;
+}
+.content h1:hover {
+    animation-name: try;
+    -webkit-text-stroke: 2px #000000;
+    color: transparent;
+}
+
+@keyframes try {
+    0%   {color: rgb(255, 206, 231);}
+    25%  {color: rgb(238, 198, 237);}
+    50%  {color: rgb(196, 196, 243);}
+    100% {color: rgb(187, 210, 224);}
+  }
+
+
+.content a {
+    font-family: loogo;
+    padding-bottom: 25%;
+    text-decoration: none;
+    display: inline-block;
+    font-size:x-large;
+    color: #ffffff;
+    border: 2px solid #2b1934;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.content a:hover {
+    -webkit-text-stroke: 2px #000000;
+    color: transparent;
+
+}
+
+
+.vid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .vid {
+        width: auto;
+        height: 100%;
+
+    }
+}
+
+@media (max-aspect-ratio: 9/16) {
+    .vid {
+        width: 100%;
+        height: auto;
+
+    }
+}
+

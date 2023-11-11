@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chosse ur cards</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script defer src="test.js"></script>
+    <!-- <script>
+        $(function () {
+            $("#visible").click(function () {
+                $('#invisible1').toggleClass("show");
+            });
+            $("#visible").click(function () {
+                $('#invisible2').toggleClass("show");
+            });
+        });
+  
+    </script> -->
+</head>
+
+<body>
+
+    <div class="head">
+        <h2></h2>
+    </div>
+    
+
+    <label class="p1">
+        <header>คุณได้ไพ่ the hermit</header>
+        <div class="card">
+            <div class="image">
+                <img src="The Hermit.png" alt="">
+            </div>     
+        </div>
+        <p>ช่วงนี้คุณเหนื่อยมากๆเลยใช่มั้ย ไม่ว่าจะร่างกายหรือจิตใจยังไงก็ต้องได้รับการเยียวยานะ ลองปล่อยใจไปเรื่อยๆไม่ต้องคิดมากกับเรื่องต่างๆ ใช้เวลาอยู่กับตัวเองบ้าง ใส่ใจความรู้สึกตัวเองให้เยอะๆนะะ</p>
+    </label>
+    
+    <label class="p2">
+        <header>คุณได้ไพ่ nine of wands</header>
+        <div class="card">
+            <div class="image">
+                <img src="Nine of Wands.png" alt="">
+            </div>     
+        </div>
+        <P>ตอนนี้คุณอาจจะอยู่ในความเครียด ความกดดันต่างๆ ขอเพียงพาตัวเองออกมาจากสิ่งที่ทำให้เกิดความเสียหายทั้งทางกาย ทางจิตใจ และเข้มเเข็งขึ้นมาอีกครั้ง คุณก็จะสามารถปกป้องตัวเองจากเรื่องแย่ๆ และเป็นที่ยึดเหนี่ยวให้กับตัวเองได้เเล้ว!</P>
+    </label>
+
+    <label class="p3">
+        <header>คุณได้ไพ่ ten of Swords</header>
+        <div class="card">
+            <div class="image">
+                <img src="Ten of Swords.png" alt="">
+            </div>     
+        </div>
+        <p style="font-size: 13px;">ถ้าตุณมีเรื่องเครียด เรื่องกังวลปวดหัวต่างๆอยู่  ไพ่นี้คือจุดสิ้นสุดของปัญหาเหล่านี้ คุณไม่ได้อยู่ตัวคนเดียวนะ ยังมีคนที่รักและคอยเป็นห่วงคุณอีกมากมาย ลองหันไปมองทุกสิ่งรอบๆตัวคุณสิ ทุกอย่างก็ยังคงรอให้คุณกลับมาสดใส หายจากเรื่องพวกนี้ให้ได้เร็วๆอยู่นะ!</p>
+    </label>
+
+    <label class="p4">
+        <header>คุณได้ไพ่ the hermit</header>
+        <div class="card">
+            <div class="image">
+                <img src="The Hermit.png" alt="">
+            </div>     
+        </div>
+        <p>ช่วงนี้คุณเหนื่อยมากๆเลยใช่มั้ย ไม่ว่าจะร่างกายหรือจิตใจยังไงก็ต้องได้รับการเยียวยานะ ลองปล่อยใจไปเรื่อยๆไม่ต้องคิดมากกับเรื่องต่างๆ ใช้เวลาอยู่กับตัวเองบ้าง ใส่ใจความรู้สึกตัวเองให้เยอะๆนะะ</p>
+    </label>
+    <label class="p5">
+        <header>คุณได้ไพ่ nine of wands</header>
+        <div class="card">
+            <div class="image">
+                <img src="Nine of Wands.png" alt="">
+            </div>     
+        </div>
+        <P>ตอนนี้คุณอาจจะอยู่ในความเครียด ความกดดันต่างๆ ขอเพียงพาตัวเองออกมาจากสิ่งที่ทำให้เกิดความเสียหายทั้งทางกาย ทางจิตใจ และเข้มเเข็งขึ้นมาอีกครั้ง คุณก็จะสามารถปกป้องตัวเองจากเรื่องแย่ๆ และเป็นที่ยึดเหนี่ยวให้กับตัวเองได้เเล้ว!</P>
+    </label>
+
+
+    <div class="container">
+        <input type="radio" name="slider" class="d-none" id="s1" checked>
+        <input type="radio" name="slider" class="d-none" id="s2" >
+        <input type="radio" name="slider" class="d-none" id="s3" >
+        <input type="radio" name="slider" class="d-none" id="s4" >
+        <input type="radio" name="slider" class="d-none" id="s5" >
+
+
+        <div class="cards">
+            <label for="s1" id="slide1">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact1" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+
+            <label for="s2" id="slide2">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact2" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+
+            <label for="s3" id="slide3">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact3" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+
+            <label for="s4" id="slide4">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact4" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+
+            <label for="s5" id="slide5">
+                <div class="card">
+
+                    <div class="image">
+                        <img src="BACK.png" alt="">
+                    </div>
+                    <button class="btncontact5" id="visible">เลือกใบนี้</button>
+                </div>
+            </label>
+        </div>
+
+    </div>
+
+    <script>
+
+        const name = localStorage.getItem('name');
+        const date = localStorage.getItem('date');
+
+        document.getElementById('name').textContent = name;
+        document.getElementById('date').textContent = date;
+
+    </script>
+</body>
+
+</html>

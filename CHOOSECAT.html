@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+    <title>test</title>
+    <link rel="stylesheet" href="test.css">
+    <script defer src="test.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@700&family=Tenali+Ramakrishna&display=swap"
+        rel="stylesheet">
+</HEAD>
+
+
+<body>
+    <div class="hero">
+        <video autoplay loop muted play-inline class="videobackground">
+            <source src="vid3.mp4" type="video/mp4">
+        </video>
+        <div class="center">
+            <h1>heyy <span style="font-family: loogo;" id="name"></span></h1>
+            <a href="CARDWORK.html">การงาน</a><br>
+            <a href="CARDLUCK.html">โชคลาภ</a><br>
+            <a href="CARDHEALTH.html">สุขภาพ</a><br>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    const name = localStorage.getItem('name');
+    const date = localStorage.getItem('date');
+
+    document.getElementById('name').textContent = name;
+    document.getElementById('date').textContent = date;
+
+</script>
+
+</HTML>
